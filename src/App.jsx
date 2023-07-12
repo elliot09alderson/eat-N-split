@@ -231,7 +231,11 @@ function EatAndSplit() {
           </Button>
         </div>
         {userData && (
-          <SplitBill splitUserBill={splitUserBill} userData={userData} />
+          <SplitBill
+            key={userData.id}
+            splitUserBill={splitUserBill}
+            userData={userData}
+          />
         )}
       </div>
     </>
